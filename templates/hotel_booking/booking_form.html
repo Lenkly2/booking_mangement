@@ -1,0 +1,17 @@
+{% extends 'hotel_booking/index.html' %}
+
+{% block content%}
+
+    <form method="post">
+        {% csrf_token %}
+        custome:
+        <input type="number",name="cust_id">
+        room:
+        <input type="number",name="room_id">
+
+        <input type="datetime-local",name="datetime">
+
+        <input type="submit",value="забронювати">
+    </form>
+
+{% endblock %}
